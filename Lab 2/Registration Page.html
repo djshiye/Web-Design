@@ -2,28 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <br>
-    <center><img width="10%" height="3%" src="/Lab 2/images/ibu_logo.png" alt="ibu_logo"></center>
-    <title>International Burch University</title>
+    <title>Registration Form</title>
 </head>
 <body>
 
+    <img width="15%" height="5%" src="/Lab 2/images/ibu_logo.png" alt="ibu_logo">
 
-    <center><h3>International Burch University</h3></center>
-   
-    <br>
-    <h3>REGISTRATION FORM</h3>
+<h1>International Burch University</h1>
+<h2>REGISTRATION FORM</h2>
 
-    <label for="First Name">First Name:</label>
-    <label for="Last Name">Last Name:</label>
-    <br>
-    <input type="text" id="First Name" name="First Name">
-    <input type="text" id="Last Name" name="Last Name">
+<form action="/submit_registration" method="post">
+    <label for="firstname">Firstname:</label>
+    <input type="text" id="firstname" name="firstname" placeholder="Enter your firstname"><br><br>
 
-    <br>
-    <br>
-    <center><button style="background-color: white; color:black;">REGISTER</button></center>
+    <label for="lastname">Lastname:</label>
+    <input type="text" id="lastname" name="lastname" placeholder="Enter your lastname"><br><br>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="dob">Date of birth:</label>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <label for="placeofbirth">Place of birth:</label>
+    <input type="text" id="placeofbirth" name="placeofbirth"><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <label for="haircolor">Hair color:</label>
+    <input type="text" id="haircolor" name="haircolor"><br><br>
+
+    <label for="notes">Notes:</label>
+    <textarea id="notes" name="notes"></textarea><br><br>
+
+    <input type="checkbox" id="notifications" name="notifications" value="Receive notifications">
+    <label for="notifications">Receive notifications</label><br><br>
+
+    <input type="submit" value="Register">
+</form>
 
 </body>
 </html>
