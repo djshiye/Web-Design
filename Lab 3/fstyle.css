@@ -1,0 +1,109 @@
+
+.header {
+    
+    margin: 0pt;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(249, 179, 141);
+    
+}
+
+.flower {
+    width: 10%;
+    height: 10%;
+    padding-top: 1%;
+    padding-left: 12%;
+}
+
+pre{
+    font-size: 116%;
+    margin-bottom: 0%;
+    margin-top: 2.5%;
+}
+
+.plant {
+    width: 80%;
+    float: right;
+    margin-bottom: 0%;
+    
+    
+}
+
+body{
+    margin: 0%;
+}
+
+
+.sales {
+    width: max-content;
+    text-align: left;
+    padding-top: 14%;
+    padding-left: 12%;
+    font-size: 500%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    color: rgb(55, 55, 55);
+    
+    
+}
+
+.part1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.part2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h2{
+    font-weight: normal;
+}
+
+td{
+
+    text-align: center;
+    font-size: 120%;
+    
+}
+
+.desc {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+table {
+    background-color: rgb(251, 249, 236);
+    width: 100%;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: block;
+    justify-content:center;
+    text-align: center;
+    background-color: rgb(249, 179, 141);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+.fluf {
+    font-size: small;
+
+}
