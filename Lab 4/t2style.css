@@ -1,0 +1,8 @@
+/* Custom styling for the bottom border */
+.custom-input {
+    border: none;
+    border-bottom: 1.5pt solid #5b5b5b;
+    border-radius: 0;
+    padding: 5px 0;
+    background-color: transparent;
+  }

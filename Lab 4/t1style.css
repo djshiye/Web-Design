@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(199, 199, 199);
+    justify-content: center;
+    
+}
+
+form{
+    width: 900px;
+    text-align: right;
+    margin-right: 20%;
+    margin-top: 1%;
+    justify-content: center;
+  
+}
+
+.input-group-text{
+    background-color:  rgb(199, 199, 199);
+    justify-content: center;
+}
+
+.bi-send-fill{
+    padding-left: 2pt;
+    padding-bottom: 2pt;
+    justify-content: center;
+}
+
+.btn-primary{
+    background-color: rgb(238, 167, 14);
+    border-color: white;
+}
+
+.col p {
+    margin-top: 10px;
+}
+
+
