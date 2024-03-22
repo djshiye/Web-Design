@@ -1,0 +1,43 @@
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Lab\ 4/img/bgmain.jpeg');
+    background-size: cover;
+    z-index: -1;
+    opacity: 1;
+}
+
+.pfp-rectangle {
+    background-color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+
+}
+
+
+.custom-input {
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
