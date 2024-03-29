@@ -1,0 +1,26 @@
+Photos:
+-marvel_vs_dc:https://tomlennon.com/marvel-vs-dc-a-secret-war-in-crisis/
+-facebook logo: https://toppng.com/facebook-button-circle-fb-icon-white-PNG-free-PNG-Images_176435
+-instagram logo: https://toppng.com/free-image/transparent-background-instagram-white-PNG-free-PNG-Images_70866
+-banner photo: https://wallpaperaccess.com/japanese-art
+
+Video:
+-Nvidia video : https://www.youtube.com/watch?v=02h_dNl-C-s&ab_channel=NVIDIAGeForce
+
+Gallery Photos & Videos: All of the photos taken from : https://www.wallpaperflare.com/
+-Gallery 1:
+	-Video nr1.: https://www.youtube.com/watch?v=osvw2WSVyOE&ab_channel=kronos
+	-Photo:https://www.wallpaperflare.com/black-vehicle-nissan-skyline-nissan-skyline-r32-nissan-gt-r-r32-wallpaper-pbkdy/download/1920x1080
+	-Photo:https://www.wallpaperflare.com/toyota-sprinter-trueno-ae86-gt-apex-jdm-japanese-cars-sports-car-wallpaper-udybt/download/1920x1080
+	-Photo:
+-Gallery 2:
+	-Photo:https://www.wallpaperflare.com/mount-fuji-japan-mountains-asian-architecture-building-nature-wallpaper-qqn/download/1920x1080
+	-Photo:https://www.wallpaperflare.com/white-chinese-lanterns-japanese-corridor-with-lanterns-cityscape-wallpaper-fe/download/1920x1080
+	-Photo:
+
+Code link:
+-Drop down for the gallery: https://www.w3schools.com/howto/howto_css_dropdown.asp
+-Search Bar: https://www.w3schools.com/howto/howto_css_searchbar.asp
+-Sticky footer fix: https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b#:~:text=The%20trick%20is%20to%20use,the%20bottom%20of%20the%20page.
+-Form : https://www.w3schools.com/howto/howto_css_contact_form.asp
+-Blog Info: https://browser.geekbench.com/processor-benchmarks

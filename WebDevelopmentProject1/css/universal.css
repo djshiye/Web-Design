@@ -1,0 +1,19 @@
+* {
+	text-decoration: none;
+}
+
+html {   
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #f3f3f3;
+	margin:0px;
+	padding:0px;
+	width:100%;
+
+}
+
+.allbutfooter {
+	min-height: calc(100vh - 120px);
+}
