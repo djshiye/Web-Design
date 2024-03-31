@@ -24,3 +24,9 @@ Code link:
 -Sticky footer fix: https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b#:~:text=The%20trick%20is%20to%20use,the%20bottom%20of%20the%20page.
 -Form : https://www.w3schools.com/howto/howto_css_contact_form.asp
 -Blog Info: https://browser.geekbench.com/processor-benchmarks
+
+- Bootstrap CSS: https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+- Font Awesome CSS: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css
+- jQuery: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+- Popper.js: https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js
+- Bootstrap JS: https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js

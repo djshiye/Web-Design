@@ -1,115 +1,151 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" 
-	content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-	<link href="..icon/favicon.ico" rel="icon" type="image/x-icon" />
-	<link rel="stylesheet" href="../css/index.css">
-	<link rel="stylesheet" href="../css/header.css">
-	<link rel="stylesheet" href="../css/footer.css">
-	<link rel="stylesheet" href="../css/universal.css">
-	<title>Dino Klisura</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="..icon/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/universal.css">
+    <title>Dino Klisura</title>
 </head>
 <body>
-	<div class="allbutfooter">
-		<!-- "allbutfooter" klasa je za sticky footer :https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b#:~:text=The%20trick%20is%20to%20use,the%20bottom%20of%20the%20page. -->
-		<header>
-			<a href="./index.html" class="header-name">DINO</a>
-			<a href="./index.html"><img src="../img/profile.jpg" alt="logo" class="header-logo"></a>
-			<nav class="h-nav">
-				<ul>
-					<li><i class="fa-sharp fa-solid fa-user"></i><a href="#aboutme">  About me</a></li>
-					<li><a href="./blog.html">Blog</a></li>
-					<li class="dropdown"><button class="dropbtn">Gallery</button>
-						<div class="dropdown-content">
-						<a href="./gallery1.html">Gallery 1</a>
-						<a href="./gallery2.html">Gallery 2</a>
-						</div></li>
-					<li><a href="./contact.html">Contact</a></li>
-				</ul>
-				<div class="search-container">
-					<input type="text" placeholder="Search.." name="search">
-					<button type="submit"><i class="fa fa-search"></i></button>
-				</div>
-			</nav>
-		</header>
-		<main>
-			<section class="main-backround">
-				<div>
-					<h1>HI MY NAME IS <br>DINO</h1>
-					<h2>I am an information technology student that also enjoys gaming and making music.</h2>
-				</div>
-			</section>
-			<section class="main-info">
-				<h1>About Me</h1>
-				<p class="main-aboutme" id="aboutme">My name is Dino, I am 24 years old and I live in Sarajevo, which is the capital of Bosnia and Herzegovina. It is a relatively small city, yet it is home to great minds such as myself and Kanye Saraj. Our culture revolves about burek and ćevapi, and we have fought wars over them. Some say it is just dishes, a great snack even, but to those I quote my late grandfather Ramo: "Depart from this environment at once". I also enjoy making music, and it is something that one could say I am even passionate about.
-				</p>
-				<img src="../img/profile.jpg" alt="profilna" class="main-profilna">
-				<p class="main-personal">
-					Age: 24<br> Phone number: +38762544860<br> E-mail: dinoklisura1@gmail.com<br>
-					Adress: Brace Begic 13
-				</p>
-			</section>
-			<section class="main-maturski">
-				<h1>Graduation Work</h1>
-				<p class="main-maturski-detail">
-					For my graduation work in high school, I represented the intricacies of the giants of the comic book industry, Marvel and DC. The presentation was about their differences as well as qualities, ultimately leading to a strong debate on which is better.
-				</p>
-				<img src="../img/marvelvsdc.jpg" alt="roadtomars" >
-				<p>
-					Mentor Name: Rijad Ganibegović<br>City: Sarajevo<br>Adress: Obala Kulina Bana 3<br>
-					Web Page:<a href="http://www.obala.edu.ba/" target="_blank"> http://www.obala.edu.ba/</a> 
-				</p>
-			</section>
-			<section class="main-education">
-				<h1>Education & Skills</h1>
-				<h2>Informal:</h2>
-				<p>
-					I can use a variety of different image editing software such as Adobe Photoshop and Lightroom. For my music, I am proficient in most industry standard digital audio workstations such as FL Studio, Ableton and Logic Pro. For my IT skills, I have numerous certifications in network engineering such as the Cisco Certified Network Associate (CCNA) certification, as well as other certifications such as numerous MikroTik and Ubiquiti certifications.
-				</p>
-				<h2>Formal:</h2>
-				<table class="main-table-edu">
-					<tr>
-						<td></td>
-						<td>High School</td>
-						<td>University</td>
-					</tr>
-					<tr>
-						<td>Year</td>
-						<td>2014 - 2018</td>
-						<td>Ongoing</td>
-					</tr>
-					<tr>
-						<td>City</td>
-						<td>Sarajevo</td>
-						<td>Sarajevo</td>
-					</tr>
-					<tr>
-						<td>Adress</td>
-						<td>Obala Kulina Bana 3</td>
-						<td>Francuske revolucije bb</td>
-					</tr>
-				</table>
-			</section>
-		</main>
-	</div>
-	<footer>
-		<ul>
-			<li><a href="#top">Home</a></li>
-			<li class="footer-est">Established : 2022/2023 &copy;</li>
-		</ul>
-	<div class="footer-socials">
-		<a href="https://www.facebook.com/djshiye/" target="_blank">
-			<img src="../img/facebooklogo.png" alt="fblogo">
-		</a>
-		<a href="https://www.instagram.com/djshiye/" target="_blank">
-			<img src="../img/instalogo.png" alt="instalogo" class="footer-logo">
-		</a>
-	</div>
-	</footer>
+    <div class="allbutfooter">
+        <header>
+            <a href="./index.html" class="header-name">DINO</a>
+            <a href="./index.html"><img src="../img/profile.jpg" alt="logo" class="header-logo"></a>
+            <nav class="h-nav">
+                <ul>
+                    <li><i class="fa-sharp fa-solid fa-user"></i><a href="#aboutme">  About me</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li class="dropdown"><button class="dropbtn">Gallery</button>
+                        <div class="dropdown-content">
+                            <a href="./gallery1.html">Gallery 1</a>
+                            <a href="./gallery2.html">Gallery 2</a>
+                        </div>
+                    </li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="main-backround">
+                <div>
+                    <h1>HI MY NAME IS <br>DINO</h1>
+                    <h2>I am an information technology student that also enjoys gaming and making music.</h2>
+                </div>
+            </section>
+            <section class="main-info">
+                <h1>About Me</h1>
+                <p class="main-aboutme" id="aboutme">My name is Dino, I am 24 years old and I live in Sarajevo, which is the capital of Bosnia and Herzegovina. It is a relatively small city, yet it is home to great minds such as myself and Kanye Saraj. Our culture revolves about burek and ćevapi, and we have fought wars over them. Some say it is just dishes, a great snack even, but to those I quote my late grandfather Ramo: "Depart from this environment at once". I also enjoy making music, and it is something that one could say I am even passionate about.
+                </p>
+                <img src="../img/profile.jpg" alt="profilna" class="main-profilna">
+                <p class="main-personal">
+                    Age: 24<br> Phone number: +38762544860<br> E-mail: dinoklisura1@gmail.com<br>
+                    Address: Brace Begic 13
+                </p>
+            </section>
+            <section class="main-maturski">
+                <h1>Graduation Work</h1>
+                <p class="main-maturski-detail">
+                    For my graduation work in high school, I represented the intricacies of the giants of the comic book industry, Marvel and DC. The presentation was about their differences as well as qualities, ultimately leading to a strong debate on which is better.
+                </p>
+                <img src="../img/marvelvsdc.jpg" alt="roadtomars" >
+                <p>
+                    Mentor Name: Rijad Ganibegović<br>City: Sarajevo<br>Address: Obala Kulina Bana 3<br>
+                    Web Page:<a href="http://www.obala.edu.ba/" target="_blank"> http://www.obala.edu.ba/</a> 
+                </p>
+            </section>
+            <section class="main-education">
+                <h1>Education & Skills</h1>
+                <h2>Informal:</h2>
+                <p>
+                    I can use a variety of different image editing software such as Adobe Photoshop and Lightroom. For my music, I am proficient in most industry standard digital audio workstations such as FL Studio, Ableton and Logic Pro. For my IT skills, I have numerous certifications in network engineering such as the Cisco Certified Network Associate (CCNA) certification, as well as other certifications such as numerous MikroTik and Ubiquiti certifications.
+                </p>
+                <h2>Formal:</h2>
+                <table class="main-table-edu">
+                    <tr>
+                        <td></td>
+                        <td>High School</td>
+                        <td>University</td>
+                    </tr>
+                    <tr>
+                        <td>Year</td>
+                        <td>2014 - 2018</td>
+                        <td>Ongoing</td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td>Sarajevo</td>
+                        <td>Sarajevo</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Obala Kulina Bana 3</td>
+                        <td>Francuske revolucije bb</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li class="footer-est">Established : 2022/2023 &copy;</li>
+        </ul>
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/djshiye/" target="_blank">
+                <img src="../img/facebooklogo.png" alt="fblogo">
+            </a>
+            <a href="https://www.instagram.com/djshiye/" target="_blank">
+                <img src="../img/instalogo.png" alt="instalogo" class="footer-logo">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap modal -->
+    <div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="cookieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cookieModalLabel">Data Usage Policy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- paragraf za modal -->
+                    <p>We don't use your data since this is a portofolio website, except if you chose to leave your contact information on the Contact tab.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- dugme za modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cookieModal" style="display: none;" id="cookieModalTrigger">
+        Launch Cookie Policy Modal
+    </button>
+
+    <!-- bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- skripta koja triggera modal kada se ucita stranica -->
+    <script>
+        $(document).ready(function(){
+            $('#cookieModalTrigger').click();
+        });
+    </script>
 </body>
 </html>
