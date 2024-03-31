@@ -30,3 +30,6 @@ Code link:
 - jQuery: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
 - Popper.js: https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js
 - Bootstrap JS: https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js
+
+AMD ili Nvidia: Koji je vaš izbor za 2022?
+Blog pisao Dino Klisura 2022. godine kao dio zasebnog projekta nevezano za studije Internacionalnog Burch Univerziteta.
