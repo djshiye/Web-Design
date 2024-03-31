@@ -1,3 +1,7 @@
+// Variables
+$background-color: #f3f3f3;
+
+// Global Styles
 * {
   text-decoration: none;
 }
@@ -7,12 +11,13 @@ html {
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: $background-color;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
+// Main Content Styles
 .allbutfooter {
   min-height: calc(100vh - 120px);
-}/*# sourceMappingURL=universal.css.map */
+}

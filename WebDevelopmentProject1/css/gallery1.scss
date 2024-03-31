@@ -1,0 +1,31 @@
+/* Gallery 1 */
+
+section {
+    img {
+      display: block;
+      margin: 10px auto 20px;
+      width: 90%;
+      background-color: #cfcfcf;
+      border-radius: 4px;
+      box-shadow: 1px 1px 4px #111;
+    }
+  
+    p {
+      margin: 0 auto;
+      width: 75%;
+      background-color: #cfcfcf;
+      font-family: Poppins;
+      font-size: 14px;
+      border-radius: 4px;
+      box-shadow: 1px 1px 4px #111;
+      text-align: center;
+      text-decoration: none;
+    }
+  
+    video {
+      display: block;
+      margin: 10px auto 20px;
+      width: 90%;
+    }
+  }
+  

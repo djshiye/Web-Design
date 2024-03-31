@@ -1,7 +1,9 @@
 /* Contact.html */
+
 /* Form styling taken and modified from: https://www.w3schools.com/howto/howto_css_contact_form.asp */
-input[type=text],
-select,
+
+input[type=text], 
+select, 
 textarea {
   width: 100%;
   padding: 12px;
@@ -30,4 +32,4 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-}/*# sourceMappingURL=contact.css.map */
+}

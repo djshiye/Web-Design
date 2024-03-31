@@ -1,0 +1,214 @@
+// Define color variables
+$primary-color: #2c3e50; // Dark blue
+$secondary-color: #ecf0f1; // Light grey
+$accent-color: #2980b9; // Blue
+
+/* Main */
+.main-backround {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: {
+    image: url("../img/banner.jpg");
+    repeat: no-repeat;
+    position: center;
+    size: cover;
+  }
+}
+
+.main-backround {
+  h1, h2 {
+    font: {
+      family: 'Poppins', sans-serif;
+      weight: 800;
+    }
+    text-align: center;
+    text-shadow: 2px 2px 8px $primary-color; // Use primary color for text shadow
+  }
+
+  h1 {
+    padding-top: 50px;
+    font-size: 60px;
+    color: #fff; // White color for headings
+    margin-top: 0;
+  }
+
+  h2 {
+    padding-top: 15px;
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff; // White color for headings
+  }
+}
+
+.main-info h1 {
+  font: {
+    family: 'Poppins', sans-serif;
+    weight: 300;
+  }
+  color: $primary-color; // Use primary color for headings
+  text-align: center;
+  padding-top: 5px;
+}
+
+.main-aboutme {
+  margin: 10px;
+  width: calc(100% - 20px);
+  background: $secondary-color; // Use secondary color for background
+  font: {
+    family: 'Poppins', sans-serif;
+    size: 14px;
+  }
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px $primary-color; // Use primary color for box shadow
+  text-align: center;
+}
+
+.main-profilna {
+  display: block;
+  margin: 10px auto;
+  width: 520px;
+  height: 520px;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px $primary-color; // Use primary color for box shadow
+}
+
+.main-personal {
+  margin: 10px;
+  width: calc(100% - 20px);
+  background: #ffffff;
+  font: {
+    family: 'Poppins', sans-serif;
+    size: 14px;
+  }
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px $primary-color; // Use primary color for box shadow
+  text-align: center;
+}
+
+.main-maturski {
+  h1 {
+    font: {
+      family: 'Poppins', sans-serif;
+      size: 40px;
+      weight: 300;
+    }
+    color: $primary-color; // Use primary color for headings
+    padding-top: 5px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .main-maturski-detail, p {
+    margin: 10px;
+    width: calc(100% - 20px);
+    background: $secondary-color; // Use secondary color for background
+    font: {
+      family: 'Poppins', sans-serif;
+      size: 14px;
+    }
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px $primary-color; // Use primary color for box shadow
+    text-align: center;
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    margin: 10px auto 20px;
+    width: 90%;
+    background: $secondary-color; // Use secondary color for background
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px $primary-color; // Use primary color for box shadow
+  }
+}
+
+.main-education {
+  h1, h2 {
+    font: {
+      family: 'Poppins', sans-serif;
+      size: 40px;
+      weight: 300;
+    }
+    color: $primary-color; // Use primary color for headings
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  p {
+    margin: 10px;
+    width: calc(100% - 20px);
+    background: $secondary-color; // Use secondary color for background
+    font: {
+      family: 'Poppins', sans-serif;
+      size: 14px;
+    }
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px $primary-color; // Use primary color for box shadow
+    text-align: center;
+  }
+
+  .main-table-edu, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: auto;
+    padding: auto;
+  }
+
+  tr:nth-child(even) {
+    background: $secondary-color; // Use secondary color for background
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .main-backround {
+    h2 {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+
+  .main-aboutme {
+    width: 60%;
+    max-height: 500px;
+    margin: 50px 50px 0 50px;
+    font-size: 25px;
+    overflow: auto;
+    display: block;
+    float: left;
+  }
+
+  .main-profilna {
+    margin-right: 100px;
+    margin-top: 30px;
+  }
+
+  .main-maturski img {
+    width: 60%;
+  }
+
+  .main-maturski-detail {
+      font-size: 15px; // Default font size
+  
+      // Increased font size for specific paragraph
+      &.increased-font {
+          font-size: 20px; // Increased font size
+      }
+  }
+
+  .main-maturski p {
+      font-size: 15px;
+  }
+
+  .main-education p {
+    margin: 0 auto;
+    width: 75%;
+    font-size: 20px;
+  }
+
+  .main-table-edu {
+    width: 50%;
+    height: 50%;
+  }
+}
