@@ -45,38 +45,61 @@
     <hr>
     <section id="specs">
       <h2>Specifications</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="pc-card">
-            <img src="../Lab 9/img/aurora-r15.png" alt="Alienware Aurora R12">
-            <div class="specifications">
-              <h3>Alienware Aurora R12</h3>
-              <ul>
-                <li><strong>Processor:</strong> Intel Core i9-12900K</li>
-                <li><strong>Graphics:</strong> NVIDIA GeForce RTX 3080</li>
-                <li><strong>RAM:</strong> 32GB DDR4</li>
-                <li><strong>Storage:</strong> 1TB SSD + 2TB HDD</li>
-              </ul>
-              <p>The Alienware Aurora R12 offers unrivaled gaming performance with its powerful components.</p>
-              <p>Source: <a href="https://www.dell.com/en-us/shop/desktop-computers/alienware-aurora-r12-gaming-desktop/spd/alienware-aurora-r12-desktop/daawr12pfs1h">Dell</a></p>
+      <!-- Add left and right arrow buttons -->
+      <button class="slider-button" id="prevButton">&#10094;</button>
+      <button class="slider-button" id="nextButton">&#10095;</button>
+      <div class="slider-container">
+        <div class="slider-inner">
+          <div class="col-md-6">
+            <div class="pc-card">
+              <img src="../Lab 9/img/aurora-r15.png" alt="Alienware Aurora R12">
+              <div class="specifications">
+                <h3>Alienware Aurora R12</h3>
+                <ul>
+                  <li><strong>Processor:</strong> Intel Core i9-12900K</li>
+                  <li><strong>Graphics:</strong> NVIDIA GeForce RTX 3080</li>
+                  <li><strong>RAM:</strong> 32GB DDR4</li>
+                  <li><strong>Storage:</strong> 1TB SSD + 2TB HDD</li>
+                </ul>
+                <p>The Alienware Aurora R12 offers unrivaled gaming performance with its powerful components.</p>
+                <p>Source: <a href="https://www.dell.com/en-us/shop/desktop-computers/alienware-aurora-r12-gaming-desktop/spd/alienware-aurora-r12-desktop/daawr12pfs1h">Dell</a></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="pc-card">
-            <img src="../Lab 9/img/ROG Strix GA35 .png" alt="ROG Strix GA35">
-            <div class="specifications">
-              <h3>ROG Strix GA35</h3>
-              <ul>
-                <li><strong>Processor:</strong> AMD Ryzen 9 5950X</li>
-                <li><strong>Graphics:</strong> NVIDIA GeForce RTX 3090</li>
-                <li><strong>RAM:</strong> 64GB DDR4</li>
-                <li><strong>Storage:</strong> 2TB SSD</li>
-              </ul>
-              <p>The ROG Strix GA35 delivers cutting-edge performance for the most demanding gamers.</p>
-              <p>Source: <a href="https://rog.asus.com/us/desktops/rog-strix/rog-strix-ga35-series/">ASUS</a></p>
+          <div class="col-md-6">
+            <div class="pc-card">
+              <img src="../Lab 9/img/ROG Strix GA35 .png" alt="ROG Strix GA35">
+              <div class="specifications">
+                <h3>ROG Strix GA35</h3>
+                <ul>
+                  <li><strong>Processor:</strong> AMD Ryzen 9 5950X</li>
+                  <li><strong>Graphics:</strong> NVIDIA GeForce RTX 3090</li>
+                  <li><strong>RAM:</strong> 64GB DDR4</li>
+                  <li><strong>Storage:</strong> 2TB SSD</li>
+                </ul>
+                <p>The ROG Strix GA35 delivers cutting-edge performance for the most demanding gamers.</p>
+                <p>Source: <a href="https://rog.asus.com/us/desktops/rog-strix/rog-strix-ga35-series/">ASUS</a></p>
+              </div>
             </div>
           </div>
+          <!-- Add more gaming computers here -->
+          <div class="col-md-6">
+            <div class="pc-card">
+              <img src="../Lab 9/img/another-gaming-pc.png" alt="Another Gaming PC">
+              <div class="specifications">
+                <h3>Another Gaming PC</h3>
+                <ul>
+                  <li><strong>Processor:</strong> Processor Model</li>
+                  <li><strong>Graphics:</strong> Graphics Card Model</li>
+                  <li><strong>RAM:</strong> RAM Size</li>
+                  <li><strong>Storage:</strong> Storage Size</li>
+                </ul>
+                <p>Description of the gaming PC.</p>
+                <p>Source: <a href="#">Source Link</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more gaming computers here -->
         </div>
       </div>
     </section>
@@ -113,6 +136,15 @@
         $('#darkModeToggle').prop('checked', true);
         $('body').addClass('bg-dark text-light');
       }
+
+      // JavaScript for slider buttons
+      $("#nextButton").click(function() {
+          $(".slider-inner").css("transform", "translateX(-100%)");
+      });
+
+      $("#prevButton").click(function() {
+          $(".slider-inner").css("transform", "translateX(0)");
+      });
     });
   </script>
 </body>
