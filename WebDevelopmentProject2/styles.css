@@ -1,0 +1,120 @@
+/* Navbar */
+.navbar {
+  transition: all 0.3s ease; /* Smooth transition for navbar */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Adjust navbar brand font size */
+}
+
+/* Navbar Toggler Icon */
+.navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem; /* Adjust padding for navbar links */
+}
+
+/* Dark Mode Toggle */
+.form-check-label {
+  margin-bottom: 0; /* Remove margin from dark mode label */
+}
+
+/* Content Sections */
+.container {
+  padding-top: 20px; /* Add space on top */
+  padding-bottom: 20px; /* Add space on bottom */
+}
+
+section {
+  margin-bottom: 40px; /* Add space between sections */
+}
+
+/* Slider */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slider-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.pc-card {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.pc-card img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.pc-card .specifications {
+  margin-top: 10px;
+}
+
+.pc-card h3 {
+  font-size: 1.5rem;
+}
+
+.pc-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pc-card ul li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.pc-card p {
+  font-size: 0.9rem;
+}
+
+/* Modal */
+.modal-dialog {
+  max-width: 90%; /* Adjust max width for modal */
+}
+
+.modal-body {
+  text-align: center; /* Center image in modal */
+}
+
+.img-fluid {
+  max-width: 100%; /* Ensure images in modal are responsive */
+}
+
+/* Footer */
+footer {
+  background-color: #f8f9fa; /* Adjust footer background color */
+  padding: 20px 0; /* Adjust padding */
+  text-align: center;
+}
+
+/* Toastr Notifications */
+#toast-container {
+  z-index: 9999; /* Ensure toastr notifications appear on top */
+}
+
+/* Dark Mode */
+body.bg-dark.text-light {
+  background-color: #343a40; /* Adjust background color for dark mode */
+  color: #ffffff; /* Adjust text color for dark mode */
+}

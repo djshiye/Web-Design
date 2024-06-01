@@ -1,0 +1,92 @@
+{
+  "specs": [
+      {
+          "id": 1,
+          "name": "Alienware Aurora R12",
+          "processor": "Intel Core i9-12900K",
+          "graphics": "NVIDIA GeForce RTX 3080",
+          "ram": "32GB DDR4",
+          "storage": "1TB SSD + 2TB HDD",
+          "description": "The Alienware Aurora R12 offers unrivaled gaming performance with its powerful components.",
+          "source": "https://www.dell.com/en-us/shop/desktop-computers/alienware-aurora-r12-gaming-desktop/spd/alienware-aurora-r12-desktop/daawr12pfs1h",
+          "image": "./img/aurora-r15.png"
+      },
+      {
+          "id": 2,
+          "name": "ROG Strix GA35",
+          "processor": "AMD Ryzen 9 5950X",
+          "graphics": "NVIDIA GeForce RTX 3090",
+          "ram": "64GB DDR4",
+          "storage": "2TB SSD",
+          "description": "The ROG Strix GA35 delivers cutting-edge performance for the most demanding gamers. With great reviews, it delivers for it's price.",
+          "source": "https://rog.asus.com/us/desktops/rog-strix/rog-strix-ga35-series/",
+          "image": "./img/ROG Strix GA35.png"
+      },
+      {
+        "id": 3,
+        "name": "VENGEANCE i8200 iCUE LINK EDITION",
+        "processor": "Intel Core i9-14900K",
+        "graphics": "NVIDIA RTX 4090",
+        "ram": "64GB DDR5 6400MT/s",
+        "storage": "4TB NVMe SSD",
+        "description": "The VENGEANCE i8200 iCUE LINK EDITION is truly a gaming beast. It runs all AAA games at 1440p ultra settings according to our benchmarks.",
+        "source": "https://www.corsair.com/us/en/p/gaming-computers/cs-9060011-na/vengeance-i8200-icue-link-edition-gaming-pc-intel-core-i9-14900k-nvidia-rtx-4090-64gb-ddr5-6400mts-memory-4tb-2x-2tb-m2-nvme-ssd-cs-9060011-na",
+        "image": "./img/CORSAIR_VENGEANCE_i8200_iCUE_LINK_EDITION.png"
+    },
+    {
+        "id": 4,
+        "name": "iBuyPower RDY Slate 8MP 003",
+        "processor": "Intel® Core™ i7-14700F",
+        "graphics": "GeForce RTX 4060 Ti - 8GB",
+        "ram": "16GB DDR5-5200MHz RAM",
+        "storage": "1TB M.2 NVMe SSD",
+        "description": "RDY Slate 8MP 003 is truly a good budget gaming machine for any demanding gamer.",
+        "source": "https://www.ibuypower.com/store/rdy-slate-8mp-003/",
+        "image": "./img/RDY Slate 8MP 003.png"
+    },
+    {
+        "id": 5,
+        "name": "SLIDER CHECK",
+        "processor": "Intel Core i9-14900K",
+        "graphics": "NVIDIA RTX 4090",
+        "ram": "64GB DDR5 6400MT/s",
+        "storage": "4TB NVMe SSD",
+        "description": "This is a placeholder to prove slider functionality",
+        "source": "https://rog.asus.com/us/desktops/rog-strix/rog-strix-ga35-series/",
+        "image": "./img/CORSAIR_VENGEANCE_i8200_iCUE_LINK_EDITION.png"
+    },
+    {
+        "id": 6,
+        "name": "SLIDER CHECK",
+        "processor": "Intel Core i9-14900K",
+        "graphics": "NVIDIA RTX 4090",
+        "ram": "64GB DDR5 6400MT/s",
+        "storage": "4TB NVMe SSD",
+        "description": "This is a placeholder to prove slider functionality",
+        "source": "https://rog.asus.com/us/desktops/rog-strix/rog-strix-ga35-series/",
+        "image": "./img/CORSAIR_VENGEANCE_i8200_iCUE_LINK_EDITION.png"
+    },
+    {
+        "id": 7,
+        "name": "SLIDER CHECK",
+        "processor": "Intel Core i9-14900K",
+        "graphics": "NVIDIA RTX 4090",
+        "ram": "64GB DDR5 6400MT/s",
+        "storage": "4TB NVMe SSD",
+        "description": "This is a placeholder to prove slider functionality",
+        "source": "https://rog.asus.com/us/desktops/rog-strix/rog-strix-ga35-series/",
+        "image": "./img/CORSAIR_VENGEANCE_i8200_iCUE_LINK_EDITION.png"
+    },
+    {
+        "id": 8,
+        "name": "SLIDER CHECK",
+        "processor": "Intel Core i9-14900K",
+        "graphics": "NVIDIA RTX 4090",
+        "ram": "64GB DDR5 6400MT/s",
+        "storage": "4TB NVMe SSD",
+        "description": "This is a placeholder to prove slider functionality",
+        "source": "https://rog.asus.com/us/desktops/rog-strix/rog-strix-ga35-series/",
+        "image": "./img/CORSAIR_VENGEANCE_i8200_iCUE_LINK_EDITION.png"
+    }
+  ]
+}
