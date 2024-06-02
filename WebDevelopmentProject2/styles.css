@@ -38,21 +38,55 @@
 }
 
 section {
-  margin-bottom: 40px; /* Add space between sections */
+  margin-bottom: 20px; /* Add space between sections */
 }
 
 /* Slider */
 .slider-container {
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center; /* Center the slider content and buttons vertically */
+  justify-content: center;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 50px; /* Adjust this value to position the slider lower */
+  overflow: hidden; /* Ensure that the buttons don't overflow the container */
+  position: relative; /* Position relative for absolute positioning of buttons */
 }
 
 .slider-inner {
   display: flex;
   transition: transform 0.5s ease;
+  flex: 1; /* Take up the available space between the buttons */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%; /* Add border-radius for rounded buttons */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-prev {
+  left: 10px; /* Adjust the distance from the left */
+}
+
+.swiper-button-next {
+  right: 10px; /* Adjust the distance from the right */
+}
+
+/* Hover effect */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(38, 147, 237, 0.7); /* Change the background color on hover */
 }
 
 .pc-card {
@@ -117,4 +151,30 @@ footer {
 body.bg-dark.text-light {
   background-color: #343a40; /* Adjust background color for dark mode */
   color: #ffffff; /* Adjust text color for dark mode */
+}
+
+/* Center h1 element */
+#home {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh; /* Adjust height as needed */
+}
+
+#home h1 {
+  margin-top: 50px; /* Adjust the value as needed */
+}
+
+#home p {
+  text-align: center; /* Center horizontally */
+}
+
+#specs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Make this section take full viewport height */
 }
