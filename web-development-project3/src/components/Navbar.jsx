@@ -11,35 +11,35 @@ const Navbar = () => {
   };
 
   const drawer = (
-    <div className="drawer">
+    <div className="drawer" style={{ backgroundColor: '#37474F', height: '100vh', paddingTop: '64px' }}>
       <List>
         <ListItem button component={Link} to="/" onClick={() => setDrawerOpen(false)}>
-          <ListItemText primary="Home" />
+          <ListItemText primary="Home" style={{ color: '#FFFFFF' }} />
         </ListItem>
         <ListItem button component={Link} to="/about" onClick={() => setDrawerOpen(false)}>
-          <ListItemText primary="About" />
+          <ListItemText primary="About" style={{ color: '#FFFFFF' }} />
         </ListItem>
         <ListItem button component={Link} to="/posts" onClick={() => setDrawerOpen(false)}>
-          <ListItemText primary="Posts" />
+          <ListItemText primary="Posts" style={{ color: '#FFFFFF' }} />
         </ListItem>
         <ListItem button component={Link} to="/contact" onClick={() => setDrawerOpen(false)}>
-          <ListItemText primary="Contact" />
+          <ListItemText primary="Contact" style={{ color: '#FFFFFF' }} />
         </ListItem>
       </List>
     </div>
   );
 
   return (
-    <AppBar position="static" className="navbar">
+    <AppBar position="fixed" className="navbar" style={{ backgroundColor: '#455A64', boxShadow: 'none', borderBottom: '2px solid #FFFFFF' }}>
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" sx={{ flexGrow: 1, color: '#FFFFFF', fontWeight: 'bold', letterSpacing: '1px', fontFamily: 'Roboto, sans-serif' }}>
           Dino's Amazing Blog
         </Typography>
         <Hidden smDown>
-          <Button color="inherit" component={Link} to="/" className="nav-link">Home</Button>
-          <Button color="inherit" component={Link} to="/about" className="nav-link">About</Button>
-          <Button color="inherit" component={Link} to="/posts" className="nav-link">Posts</Button>
-          <Button color="inherit" component={Link} to="/contact" className="nav-link">Contact</Button>
+          <Button color="inherit" component={Link} to="/" className="nav-link" style={{ color: '#FFFFFF', marginRight: '20px', fontWeight: '500', letterSpacing: '1px' }}>Home</Button>
+          <Button color="inherit" component={Link} to="/about" className="nav-link" style={{ color: '#FFFFFF', marginRight: '20px', fontWeight: '500', letterSpacing: '1px' }}>About</Button>
+          <Button color="inherit" component={Link} to="/posts" className="nav-link" style={{ color: '#FFFFFF', marginRight: '20px', fontWeight: '500', letterSpacing: '1px' }}>Posts</Button>
+          <Button color="inherit" component={Link} to="/contact" className="nav-link" style={{ color: '#FFFFFF', fontWeight: '500', letterSpacing: '1px' }}>Contact</Button>
         </Hidden>
         <Hidden smUp>
           <IconButton color="inherit" edge="end" onClick={handleDrawerToggle}>
