@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider, CssBaseline, Box } from '@mui/material';
 import Navbar from './components/Navbar';
@@ -9,11 +9,22 @@ import Contact from './pages/Contact';
 import theme from './theme';
 
 const App = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const themeWithDarkMode = {
+    ...theme,
+    palette: {
+      ...theme.palette,
+      mode: darkMode ? 'dark' : 'light',
+    },
+  };
+
   return (
-    <ThemeProvider theme={theme}>
+
+    <ThemeProvider theme={themeWithDarkMode}>
       <CssBaseline />
       <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <Navbar />
+        <Navbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
         <Box component="main" sx={{ flexGrow: 1, padding: 3 }}>
           <Routes>
             <Route path="/" element={<Home />} />

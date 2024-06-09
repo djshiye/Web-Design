@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Hidden, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -12,7 +11,7 @@ const Navbar = () => {
   };
 
   const drawer = (
-    <div>
+    <div className="drawer">
       <List>
         <ListItem button component={Link} to="/" onClick={() => setDrawerOpen(false)}>
           <ListItemText primary="Home" />
@@ -31,16 +30,16 @@ const Navbar = () => {
   );
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="static" className="navbar">
       <Toolbar>
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          My Blog
+          Dino's Amazing Blog
         </Typography>
         <Hidden smDown>
-          <Button color="inherit" component={Link} to="/">Home</Button>
-          <Button color="inherit" component={Link} to="/about">About</Button>
-          <Button color="inherit" component={Link} to="/posts">Posts</Button>
-          <Button color="inherit" component={Link} to="/contact">Contact</Button>
+          <Button color="inherit" component={Link} to="/" className="nav-link">Home</Button>
+          <Button color="inherit" component={Link} to="/about" className="nav-link">About</Button>
+          <Button color="inherit" component={Link} to="/posts" className="nav-link">Posts</Button>
+          <Button color="inherit" component={Link} to="/contact" className="nav-link">Contact</Button>
         </Hidden>
         <Hidden smUp>
           <IconButton color="inherit" edge="end" onClick={handleDrawerToggle}>
