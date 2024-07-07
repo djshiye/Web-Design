@@ -1,0 +1,58 @@
+/*TODO #3
+     * Table should have solid 1px red borders.
+     * Header columns should be green and aligned to left.
+     * Title in bootstrap modal should be italic and with font size 18px
+     * These properties should be defined in .css file
+     * If screen is small, less than 845px text within table should have font 10px 
+     * and if it is larger font should be 18px 
+     * 20 points
+    */
+
+/* #exampleModalLabel{
+    font-style: italic;
+    font-size: 18px;
+}
+#students {
+    border: 1px solid red;
+    width: 100%;
+    font-size: 18px;
+}
+
+#students th {
+    background-color: green;
+    text-align: left;
+}
+
+@media screen and (max-width: 845px) {
+    #students{
+      font-size: 10px;
+    }
+} */
+/*TODO #3 GEROUP 1
+     * Table should have solid 2px blue borders.
+     * Header columns should be red and centered.
+     * Title in bootstrap modal should be italic and with font size 28px
+     * These properties should be defined in .css file
+     * If screen is small, less than 845px button should have red color of letters
+     * and if it is larger color should be white 
+     * 20 points
+    */
+
+    #exampleModalLabel2{
+        font-style: italic;
+        font-size: 28px;
+    }
+    #employees {
+        border: 2px solid blue;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    #employees thead { 
+        background-color: red;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 845px) {
+        
+    }
