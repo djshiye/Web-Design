@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Midterm Exam 2024</title>
+    <link
+      rel="stylesheet"
+      href="//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet" 
+      href = "style.css"
+      />
+    <style>
+      .panel {
+        min-height: 390px;
+      }
+    </style>
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZh3w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Midterm Exam</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+      <div class="jumbotron">
+        <h1>
+          Welcome to Midterm Makeup Exam at course Foundations of Frontend Web Development
+        </h1>
+        <p>
+          This is skeleton project to save you time on exam. You have to
+          populate missing snippet codes to make this project functional.
+        </p>
+        <h3>Following parts should be completed:</h3>
+        <ul>
+          <li>
+            1. Use Javascript to implement tasks in TODO #1
+          </li>
+          <li>
+            2. Add bootstrap modal as explained within TODO #2
+            
+          </li>
+          <li>
+            3. Load style.css file and add tasks from TODO #3 to it
+          </li>
+          <li>4. Zip your code and upload to LMS quiz assignment.</li>
+        </ul>  
+      </div>
+      <!-- <table id="students"></table> -->
+      <table id="employees"></table>
+      <!--TODO #2 Add bootstrap modal with header, body and footer of modal.
+        In footer you should add your Name and grade from Programming I course
+        6 points      
+      -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Modal
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Body goes here
+            </div>
+            <div class="modal-footer">
+              <p>Student name, student grade</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="seeMoreInfoModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="seeMoreInfoModalLabel">Edit Student Details</h4>
+            </div>
+            <div class="modal-body"> 
+              <div id="output"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- table modal GR2-->
+      <!-- <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="editModalLabel">Edit Student Details</h4>
+            </div>
+            <div class="modal-body"> -->
+              <!-- Form fields for editing student details -->
+              <!-- <form id="editForm">
+                <div class="form-group">
+                  <label for="editName">Name:</label>
+                  <input type="text" class="form-control" id="editName">
+                </div>
+                <div class="form-group">
+                  <label for="editEmail">Email:</label>
+                  <input type="email" class="form-control" id="editEmail">
+                </div>
+                <div class="form-group">
+                  <label for="editPassword">Password:</label>
+                  <input type="password" class="form-control" id="editPassword">
+                </div>
+                <div class="form-group">
+                  <label for="editGrade">Average Grade:</label>
+                  <input type="text" class="form-control" id="editGrade" disabled>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> --> 
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+  <script>
+    /*TODO #1
+     * Load data from array students to table with id=students
+     * Table should contain header row with column names: ID, Name, Email, Password, Average grade, Edit
+     * Average grade column should be calculated for each student based on student grades
+     * Each row should contain one array element from students array
+     * Edit column should contain button 'Edit' and id of button should be edit_student
+     * When button is clicked bootstrap modal should be displayed.
+     * Within modal there should be form with input fields for name, email, password and average grade
+     * Each input field should be populated by data of selected row and appropriate field type
+     * Each input field should have label and use bootstrap class for form field
+     * 
+     * 40 points
+     */
+  //   let students = [
+  //     {
+  //         "id": 1,
+  //         "name": "STD1",
+  //         "email": "std1@ibu.edu.ba",
+  //         "password": "1234567898", 
+  //         "grades": [8, 8, 9]
+  //     },
+  //     {
+  //         "id": 2,
+  //         "name": "STD2",
+  //         "email": "std2@ibu.edu.ba",
+  //         "password": "1234567898",
+  //         "grades": [8, 7, 9]
+  //     },
+  //     {
+  //         "id": 3,
+  //         "name": "STD3",
+  //         "email": "std3@ibu.edu.ba",
+  //         "password": "1234567898",
+  //         "grades": [8, 6, 9]
+  //     }
+  //   ];
+        
+  // function calculateAverage(grades) {
+  //     let sum = grades.reduce((acc, curr) => acc + curr, 0);
+  //     return (sum / grades.length).toFixed(2);
+  //   }
+
+  //   function populateTable() {
+  //     let table = document.getElementById("students");
+  //     let header = table.createTHead();
+  //     let headerRow = header.insertRow(0); //insert row at the beginning of thead
+  //     let headers = ["ID", "Name", "Email", "Password", "Average grade", "Edit"];
+
+  //     headers.forEach((headerText) => { 
+  //       let th = document.createElement("th"); //creating th elements for each label
+  //       let text = document.createTextNode(headerText); // creating text nodes containing the header text
+  //       th.appendChild(text); //appending created text to th element
+  //       headerRow.appendChild(th); // adding each th to the header row
+  //     });
+
+  //     let tbody = document.createElement("tbody");
+
+  //     students.forEach((student) => {
+  //       let row = tbody.insertRow();
+  //       row.insertCell().appendChild(document.createTextNode(student.id));
+  //       row.insertCell().appendChild(document.createTextNode(student.name));
+  //       row.insertCell().appendChild(document.createTextNode(student.email));
+  //       row.insertCell().appendChild(document.createTextNode(student.password));
+  //       let averageGrade = calculateAverage(student.grades);
+  //       row.insertCell().appendChild(document.createTextNode(averageGrade));
+        
+  //       let editButton = document.createElement("button");
+  //       editButton.innerHTML = "Edit";
+  //       editButton.id = `edit_student_${student.id}`;
+  //       editButton.addEventListener("click", () => {
+  //         displayModal(student.id);
+  //       });
+        
+  //       let editCell = row.insertCell();
+  //       editCell.appendChild(editButton);
+  //     });
+
+  //     table.appendChild(tbody);
+  //   }
+
+  //   populateTable();
+
+  //   function displayModal(studentId) {
+  //     let selectedStudent = students.find((student) => student.id === studentId);
+  //     document.getElementById("editName").value = selectedStudent.name;
+  //     document.getElementById("editEmail").value = selectedStudent.email;
+  //     document.getElementById("editPassword").value = selectedStudent.password;
+  //     document.getElementById("editGrade").value = calculateAverage(selectedStudent.grades);
+      
+  //     $("#editModal").modal("show");
+  //   }
+
+    /*TODO #1 GROUP 1
+  * Load data from array employees to table with id=employees
+  * Table should contain header row with column names: Name, Position, City, Date, Salary and MoreInfo
+  * Each row should contain one array element from employees array
+  * MoreInfo column should contain button 'See more info' and id of button should be details
+  * When button is clicked bootstrap modal should be displayed.
+  * Within modal there should be writen sentence [Name] works as [Position] in [City] and has [Salary] where Name, Position, City and Salary 
+  * should be replaced by the values from selected row.
+  * Add one more row at the end of table (which will be one column) to show sum of salaries of all employees in a form of [sum]$ 
+  * 
+  * 40 points
+  */
+ 
+
+  let employees = [
+        [ "Tiger Nixon", "System Architect", "Edinburgh", "2011/04/25", "$320,800"],
+        [ "Garrett Winters", "Accountant", "Tokyo", "2011/07/25", "$170,750" ],
+        [ "Ashton Cox", "Junior Technical Author", "San Francisco", "2009/01/12", "$86,000" ],
+        [ "Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "2012/03/29", "$433,060" ],
+        [ "Airi Satou", "Accountant", "Tokyo", "5407", "$162,700" ],
+        [ "Brielle Williamson", "Integration Specialist", "New York", "2012/12/02", "$372,000" ]
+  ];
+  function calculateTotalSalary(employees) {
+    let totalSalary = 0;
+    employees.forEach((employee) => {
+        totalSalary += parseSalary(employee[4]);
+    });
+    return totalSalary;
+}
+
+function parseSalary(salary) {
+    return parseFloat(salary.replace(/[^\d.]/g, ''));
+}
+
+function populateTable2() {
+    let table = document.getElementById("employees");
+    let header = table.createTHead();
+    let headerRow = header.insertRow(0);
+    let headers = ["Name", "Position", "City", "Date", "Salary", "MoreInfo"];
+
+    headers.forEach((headerText) => { 
+        let th = document.createElement("th");
+        let text = document.createTextNode(headerText);
+        th.appendChild(text);
+        headerRow.appendChild(th);
+    });
+
+    let tbody = document.createElement("tbody");
+
+    employees.forEach((employee) => {
+        let row = tbody.insertRow();
+        employee.forEach((data) => {
+            let cell = row.insertCell();
+            cell.appendChild(document.createTextNode(data));
+        });
+        let editButton = document.createElement("button");
+        
+        let seeMoreButton = document.createElement("button");
+        seeMoreButton.innerHTML = "See More Info";
+        seeMoreButton.id = `details_${employee}`;
+        seeMoreButton.addEventListener("click", () => {
+            displayModal2(employee);
+        });
+        
+        let buttonCell = row.insertCell();
+        buttonCell.appendChild(seeMoreButton);
+    });
+
+    table.appendChild(tbody);
+    let sumOfSalariesRow = table.insertRow();
+    let sumCell = sumOfSalariesRow.insertCell();
+    let sumOfSalaries = calculateTotalSalary(employees);
+    sumCell.colSpan = headers.length - 1; 
+    sumCell.appendChild(document.createTextNode("$" + sumOfSalaries));
+}
+
+function displayModal2(employee) {
+    let modalContent = `${employee[0]} works as ${employee[1]} in ${employee[2]} and has ${employee[4]}.`;
+    document.getElementById("output").innerHTML = modalContent;
+    $("#seeMoreInfoModal").modal("show");
+}
+
+populateTable2();
+
+  </script>
+</html>
