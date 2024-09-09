@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Alert Box</title>
+    <style>
+     
+        #custom-alert-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        #custom-alert-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        #custom-alert-box h2 {
+            margin: 0 0 10px;
+        }
+
+        #custom-alert-box p {
+            margin: 10px 0;
+        }
+
+        #custom-alert-box .close-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #custom-alert-box .close-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <div id="custom-alert-overlay"></div>
+
+    <div id="custom-alert-box">
+        <h2 id="alert-title">Alert</h2>
+        <p id="alert-message"></p>
+        <button class="close-btn" id="alert-close-btn">OK</button>
+    </div>
+
+    <button id="trigger-alert">Trigger Alert</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+       
+        function showAlert(title, message) {
+            $('#alert-title').text(title);
+            $('#alert-message').text(message);
+            $('#custom-alert-overlay').fadeIn(200);
+            $('#custom-alert-box').fadeIn(200);
+        }
+
+       
+        function closeAlert() {
+            $('#custom-alert-box').fadeOut(200);
+            $('#custom-alert-overlay').fadeOut(200);
+        }
+
+        $(document).ready(function () {
+        
+            $('#trigger-alert').click(function () {
+                showAlert('Notice', 'This is a custom alert box!');
+            });
+
+        
+            $('#alert-close-btn').click(function () {
+                closeAlert();
+            });
+
+         
+            $('#custom-alert-overlay').click(function () {
+                closeAlert();
+            });
+        });
+    </script>
+</body>
+</html>
