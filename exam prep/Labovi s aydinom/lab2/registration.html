@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/?query=lato" />
+  </head>
+  <body>
+    <center>
+      <a href="index.html">
+        <img src="img/ibu_logo.png" alt="LOGO" style="width: 10%" />
+      </a>
+      <br />
+      <h2>International Burch University</h2>
+    </center>
+
+    <h2>REGISTRATION FORM</h2>
+    <form action="">
+      <table>
+        <tr>
+          <td>Firstname:</td>
+          <td>Lastname:</td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Enter your firstname" /></td>
+          <td><input type="text" placeholder="Enter your lastname" /></td>
+        </tr>
+        <tr>
+          <td>Username:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Date of birth:</td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td>Place of birth:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" id="radio1" /><label for="radio1">Male</label
+            ><br />
+            <input type="radio" id="radio2" /><label for="radio2">Female</label
+            ><br />
+            <input type="radio" id="radio3" /><label for="radio3">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Phone:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Hair colour :</td>
+          <td><input type="color" /></td>
+        </tr>
+        <tr>
+          <td>Notes:</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <textarea id="textarea" cols="30" rows="10"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="check1" />
+            <label for="check1">Recieve notifications</label>
+          </td>
+        </tr>
+      </table>
+      <a href="index.html">
+        <button type="button" class="submit">Register</button>
+      </a>
+    </form>
+  </body>
+</html>
