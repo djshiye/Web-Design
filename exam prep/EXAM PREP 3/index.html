@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Midterm Makeup & Final Exam</title>
+  <style>
+    table#locations {
+      border: 2px solid red;
+    }
+    table#locations th {
+      background-color: green;
+      color: white;
+      text-align: center;
+    }
+    @media (max-width: 845px) {
+      .btn-custom {
+        color: red;
+      }
+    }
+    @media (min-width: 846px) {
+      .btn-custom {
+        color: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Midterm Makeup & Final Exam</a>
+    </div>
+  </nav>
+
+  <div class="container theme-showcase" role="main">
+    <div class="jumbotron">
+      <h1>Welcome to Midterm Makeup & Final Exam</h1>
+      <p>This is a skeleton project. Populate missing snippets to make it functional.</p>
+    </div>
+
+    <div class="mb-3">
+      <label for="countrySelect" class="form-label">Select Country:</label>
+      <select id="countrySelect" class="form-select"></select>
+    </div>
+
+    <table id="locations" class="table">
+      <thead>
+        <tr>
+          <th>City</th>
+          <th>Occurrences</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="selectedCountry" class="text-danger" data-toggle="tooltip" title="Selected Country"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      /* Load content from IP2LOCATION.json file using AJAX */
+      $.ajax({
+        url: 'IP2LOCATION.json',
+        method: 'GET',
+        success: function (data) {
+          console.log('Data loaded from IP2LOCATION.json:', data);
+        },
+        error: function (xhr, status, error) {
+          console.error('Failed to load IP2LOCATION.json:', error);
+        }
+      });
+
+      /* Populate select dropdown with unique countries from data */
+      $.ajax({
+        url: 'IP2LOCATION.json',
+        method: 'GET',
+        success: function (data) {
+          let uniqueCountries = getUniqueCountries(data);
+          let countrySelect = $('#countrySelect');
+          uniqueCountries.forEach(country => {
+            countrySelect.append(new Option(country, country));
+          });
+
+          countrySelect.on('change', function () {
+            let selectedCountry = $(this).val();
+            displayCities(selectedCountry, data);
+            $('#selectedCountry').text(selectedCountry);
+          });
+        }
+      });
+
+      function getUniqueCountries(data) {
+        let countries = data.map(item => item.Country);
+        return [...new Set(countries)];
+      }
+
+      function displayCities(country, data) {
+        let filteredCities = data.filter(item => item.Country === country);
+        let cityCounts = {};
+        filteredCities.forEach(item => {
+          cityCounts[item.City] = (cityCounts[item.City] || 0) + 1;
+        });
+
+        let tableBody = $('#locations tbody');
+        tableBody.empty();
+        for (let city in cityCounts) {
+          tableBody.append(`<tr><td>${city}</td><td>${cityCounts[city]}</td></tr>`);
+        }
+      }
+
+      /* Tooltip initialization */
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    });
+  </script>
+</body>
+</html>
